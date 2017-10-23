@@ -1,0 +1,3 @@
+build/*
+dist/*
+kaeruprofiler.egg-info/*
