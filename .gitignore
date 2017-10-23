@@ -1,3 +1,4 @@
 build/*
 dist/*
 kaeruprofiler.egg-info/*
+*.pyc

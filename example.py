@@ -1,4 +1,5 @@
-from kaeruprofiler import profile_with_key
+import time
+from kaeruprofiler import profile_with_key, init
 
 
 class Target:
@@ -7,9 +8,14 @@ class Target:
 
     @profile_with_key('key_data')
     def run(self):
-        print(self.key_data * 3)
+        time.sleep(1)
 
 
+init()
 Target('3').run()
 Target('4').run()
 Target('3').run()
+Target('3').run()
+Target('5').run()
+Target('6').run()
+Target('4').run()
